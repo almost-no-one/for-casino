@@ -1,8 +1,11 @@
-import { getterTree } from "typed-vuex";
-import state from "./state";
+import { getterTree } from 'typed-vuex'
+import state from './state'
+import Post from '@/types/posts/Post'
 
 export default getterTree(state, {
-    getAllPosts: state => state.posts,
-    getPostById: state => (id: number) => state.posts.filter(post => post.id === id),
-    getPostBySlug: state => (slug: string) => state.posts.filter(post => post.slug === slug),
-});
+	allPosts: state => state.posts,
+	getPostById: state => (id: number) =>
+		state.posts.find(post => post.id === id),
+	getPostBySlug: state => (slug: string) =>
+		state.posts.find(post => post.slug === slug) as Post,
+})

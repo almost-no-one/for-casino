@@ -1,5 +1,5 @@
-import posts from "@/repositories/posts";
+import posts from '@/repositories/posts'
 
 export default {
-    posts
+	posts,
 }
