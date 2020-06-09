@@ -1,14 +1,14 @@
 <template>
 	<div class="item" v-if="post">
-		<component  :is="component" :post="post"/>
+		<component :is="component" :post="post" />
 	</div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import Post from '@/types/posts/Post'
-import StaticPost from "@/components/posts/StaticPost.vue";
-import DynamicPost from "@/components/posts/DynamicPost.vue";
+import StaticPost from '@/components/posts/StaticPost.vue'
+import DynamicPost from '@/components/posts/DynamicPost.vue'
 
 @Component({
 	components: {},

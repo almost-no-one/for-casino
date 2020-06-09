@@ -6,13 +6,13 @@
 </template>
 
 <script lang="ts">
-	import {Component, Vue, Prop} from 'vue-property-decorator'
-	import Post from '@/types/posts/Post'
+import { Component, Vue, Prop } from 'vue-property-decorator'
+import Post from '@/types/posts/Post'
 
-	@Component({
-		components: {},
-	})
-	export default class DynamicPost extends Vue {
-		@Prop({ required: true }) post: Post
-	}
+@Component({
+	components: {},
+})
+export default class DynamicPost extends Vue {
+	@Prop({ required: true }) post: Post
+}
 </script>
