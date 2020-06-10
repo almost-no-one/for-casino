@@ -1,34 +1,11 @@
-# for-casino
-
-## Project setup
+### 1 Build app
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+docker-compose build
+docker-compose up
 ```
 
-### Compiles and minifies for production
+### 2 Start app
 ```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
+http://localhost:3004/
 ```
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

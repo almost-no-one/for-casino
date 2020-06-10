@@ -1,8 +1,8 @@
-version: "2.1"
+version: "3"
 
 services:
   test:
     build: .
     restart: always
     ports:
-      - "3000:80"
+      - "3004:80"
