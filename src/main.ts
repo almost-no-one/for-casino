@@ -10,6 +10,12 @@ new Vue({
 	store,
 	render: h => h(App),
 	created: async function() {
-		await this.$accessor.posts.getPosts()
+		try {
+			await this.$accessor.posts.getPosts()
+		} catch (e) {
+			// todo handle error
+			console.error(e)
+			throw e
+		}
 	},
 }).$mount('#app')
